@@ -1,0 +1,26 @@
+<section class="p-lg-5 p-3 seccion-banner">
+    <div id="carousel-example-1z" class="carousel slide carousel-fade col-lg-12" data-ride="carousel">
+        <ol class="carousel-indicators">
+            {% for key, banner in banners %}
+                <li data-target="#carousel-example-1z" data-slide-to="{{ key }}" {% if key == 0 %} class="active" {% endif %}></li>
+            {% endfor %}
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            {% for key, banner in banners %}
+                <div class="carousel-item {% if key == 0 %} active {% endif %}">
+                    <h1>{{ banner.content.title }}</h1>
+                    <p>{{ banner.content.text }}</p>
+                    <img class="d-block w-100 rounded" src="{{ banner.content.image }}" alt="{{ banner.content.text }}" height="400">
+                </div>
+            {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+</section>

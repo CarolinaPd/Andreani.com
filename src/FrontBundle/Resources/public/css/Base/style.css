@@ -1,0 +1,147 @@
+@import url('https: //fonts.googleapis.com/css?family=Roboto: 100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+/* INICIO RESET */
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f2f2f2;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+a{
+    color: #999;
+}
+a:hover, a:focus{
+    color: #d71a1e;
+    text-decoration: none;
+}
+/* FIN RESET */
+
+/* INICIO CLASES GENERALES */
+.nopadding {
+    padding: 0px;
+}
+.wrapper {
+    display: block;
+}
+/* FIN CLASES GENERALES */
+
+/* INICIO HEADER */
+.navbar{
+    background-color: #fff;
+    background-image: url("../../images/logo-header.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+}
+.navbar .container-fluid ul{
+    list-style: none;
+    display: inline-flex;
+}
+.navbar .container-fluid a {
+    color: #999;
+}
+.navbar .container-fluid button {
+    color: #999;
+}
+.navbar p {
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 3px;
+    margin: 0px;
+}
+
+/* FIN HEADER */
+
+/* INICIO MENU */
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    margin-left: -250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #fff;
+    color: #a1a1a1;
+    transition: all 0.3s;
+}
+#sidebar.active {
+    margin-left: 0px;
+}
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+#sidebar ul p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0 10px;
+    display: inline-block;
+}
+#sidebar ul li a {
+    padding: 10px 10px 10px 20px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a i {
+    color: #999;
+    width: 23px;
+}
+#sidebar ul li a i:hover {
+    color: #d71a1e;
+    background: #fff;
+}
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #d71a1e;
+}
+#sidebar ul li.active a i {
+    color: #fff;
+}
+#sidebar ul li.active a p {
+    color: #fff;
+}
+#sidebar ul li.empresa {
+    background-color: #999;
+}
+#sidebar ul li.empresa a i {
+    color: #fff;
+}
+#sidebar ul li.empresa a p {
+    color: #fff;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+#overlay.active {
+    display: block;
+    opacity: 1;
+}
+/* FIN MENU */

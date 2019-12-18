@@ -1,0 +1,29 @@
+{% extends 'FrontBundle::base.html.twig' %}
+
+{% block metaDescription %}{{ segmento.content.SEO.description }}{% endblock %}
+{% block metaKeywords %}{{ segmento.content.SEO.description }}{% endblock %}
+{% block title %}Andreani | {{ segmento.content.SEO.title }}{% endblock %}
+
+{% block header %}
+    {% include "FrontBundle:Empresa/Includes:header.html.twig" %}
+    {% include "FrontBundle:Empresa/Includes:menu.html.twig" %}
+{% endblock %}
+
+{% block body %}
+    <div class="wrapper ficha-segmento p-lg-5 p-3">
+        <img src="{{ segmento.content.banner }}" alt="{{ segmento.content.title }}">
+        <h2 class="pt-4">{{ segmento.content.title }}</h2>
+        {{ markdownToHtml(segmento.content.body) }}
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets
+    'bundles/front/css/Empresa/style.css'
+    'bundles/front/css/Empresa/responsive.css'
+    output = 'css/*.css'
+    filter = '?yui_css' %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock %}

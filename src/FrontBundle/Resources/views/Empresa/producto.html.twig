@@ -1,0 +1,29 @@
+{% extends 'FrontBundle::base.html.twig' %}
+
+{% block metaDescription %}{{ producto.content.seo.description }}{% endblock %}
+{% block metaKeywords %}{{ producto.content.seo.description }}{% endblock %}
+{% block title %}Andreani | {{ producto.content.seo.title }}{% endblock %}
+
+{% block header %}
+    {% include "FrontBundle:Empresa/Includes:header.html.twig" %}
+    {% include "FrontBundle:Empresa/Includes:menu.html.twig" %}
+{% endblock %}
+
+{% block body %}
+    <div class="wrapper ficha-producto p-lg-5 p-3">
+        <img src="{{ producto.content.teaser_image }}" alt="{{ producto.content.title }}">
+        <h2 class="pt-4">{{ producto.content.title }}</h2>
+        {{ markdownToHtml(producto.content.long_text) }}
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets
+    'bundles/front/css/Empresa/style.css'
+    'bundles/front/css/Empresa/responsive.css'
+    output = 'css/*.css'
+    filter = '?yui_css' %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock %}

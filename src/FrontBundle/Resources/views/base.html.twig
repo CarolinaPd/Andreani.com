@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id={{getCodigoAnalytics()}}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', '{{getCodigoAnalytics()}}');
+        </script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <meta name="description" content="{% block metaDescription %}{% endblock %}">
+        <meta name="keywords" content="{% block metaKeywords %}{% endblock %}">
+        <meta name="robots" content="noindex">
+        <title>{% block title %}Andreani | Soluciones Logísticas{% endblock %}</title>
+
+        {% set image = 'bundles/front/images/favicon.png' %}
+        <link rel="icon" href="{{ asset(image) }}" type="image/png">
+
+        {% block stylesheets %}
+            {% stylesheets
+            'bundles/front/vendors/bootstrap/bootstrap.min.css'
+            'bundles/front/css/Base/style.css'
+            'bundles/front/css/Base/responsive.css'
+            output = 'css/*.css'
+            filter = '?yui_css' %}
+            <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
+            {% endstylesheets %}
+        {% endblock %}
+    </head>
+
+    <header>
+        {% block header %}
+        {% endblock %}
+    </header>
+
+    <body>
+        {% block body %}
+        {% endblock %}
+
+        <div id="overlay"></div>
+
+        {% block javascript %}
+            {% javascripts
+            'bundles/front/vendors/jquery.min.js'
+            'bundles/front/vendors/fontawesome.min.js'
+            'bundles/front/vendors/bootstrap/bootstrap.min.js'
+            'bundles/front/js/script.js'
+            filter = '?yui_js' %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
+    </body>
+</html>

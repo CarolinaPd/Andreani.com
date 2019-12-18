@@ -1,0 +1,141 @@
+/* INICIO BANNER */
+.seccion-banner h1{
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    text-shadow: 0 0 0.2em black;
+}
+.seccion-banner p{
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    text-shadow: 0 0 0.2em black;
+}
+/* FIN BANNER */
+
+/* INICIO SECCION SEGMENTOS */
+.seccion-segmentos button {
+    height: 65px;
+    width: 65px;
+    color: #d71d24;
+    background-color: white;
+    font-size: 20px;
+}
+.seccion-segmentos .col-12 .col-6 button {
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    background-color: #d71d24;
+    font-size: 16px;
+    padding: 0px;
+}
+.seccion-segmentos .col-12 .col-6 {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #c7c7c7;
+    text-align: left;
+}
+.seccion-segmentos .col-12 .col-6 a{
+    vertical-align: sub;
+}
+.seccion-segmentos .col-12 .col-6 p{
+    display: inline;
+    font-size: 15px;
+}
+/* FIN SECCION SEGMENTOS */
+
+/* INICIO FICHA SEGMENTO */
+.ficha-segmento img{
+    height: auto;
+    width: 1300px;
+    border-radius: 5px;
+}
+.ficha-segmento h2{
+    color: #d7191f;
+    font-size: 30px
+}
+.ficha-segmento h3{
+    font-size: 16px;
+    font-weight: lighter;
+    color: #434343;
+}
+.ficha-segmento p{
+    font-size: 14px;
+}
+.ficha-segmento a {
+    color: #d71a1f;
+}
+/* FIN FICHA SEGMENTO */
+
+/* INICIO SECCION ARTICULOS */
+.seccion-productos .col-12 {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+}
+.seccion-productos img {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+}
+.seccion-productos h5 {
+    color:#434343;
+}
+/* FIN SECCION ARTICULOS */
+
+/* INICIO FICHA PRODUCTO */
+.ficha-producto img{
+    height: auto;
+    width: 1300px;
+    border-radius: 5px;
+}
+.ficha-producto h2{
+    color: #d7191f;
+    font-size: 30px
+}
+.ficha-producto h3{
+    font-size: 16px;
+    font-weight: lighter;
+    color: #434343;
+}
+.ficha-producto p{
+    font-size: 14px;
+}
+.ficha-producto a {
+    color: #d71a1f;
+}
+/* FIN FICHA PRODUCTO */
+
+/* INICIO SECCION SERVICIOS */
+.seccion-servicios button {
+    height: 65px;
+    width: 65px;
+    color: #d71d24;
+    background-color: white;
+    font-size: 20px;
+}
+/* FIN SECCION SERVICIOS */
+
+/* INICIO FICHA SERVICIO */
+.ficha-servicio img{
+    height: auto;
+    width: 1300px;
+    border-radius: 5px;
+}
+.ficha-servicio h2{
+    color: #d7191f;
+    font-size: 30px
+}
+.ficha-servicio h3{
+    font-size: 16px;
+    font-weight: lighter;
+    color: #434343;
+}
+.ficha-servicio p{
+    font-size: 14px;
+}
+.ficha-servicio a {
+    color: #d71a1f;
+}
+/* FIN FICHA SERVICIO */

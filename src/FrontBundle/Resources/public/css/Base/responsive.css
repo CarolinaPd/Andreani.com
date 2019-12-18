@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    /* INICIO MENU */
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    /* FIN MENU */
+}
+@media (max-width: 414px) {
+    /* INICIO NAVBAR */
+    .desktop-display{
+        display: none;
+    }
+    /* FIN NAVBAR */
+}

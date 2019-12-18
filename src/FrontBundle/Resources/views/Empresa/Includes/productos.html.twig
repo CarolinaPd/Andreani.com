@@ -1,0 +1,22 @@
+<section class="p-lg-5 p-3 seccion-productos">
+    <h5>Nuestros Productos</h5>
+    {% for producto in productos %}
+        <div class="container col-12 rounded">
+            <a href="{{ path('front_empresa_producto', { "slug": producto.slug }) }}">
+                <div class="row">
+                    <div class="col-5 nopadding">
+                        {% set image = 'bundles/front/images/warehouse-worker.jpg' %}
+                        <img src="{{ producto.content.teaser_image }}" alt="{{ producto.content.title }}" class="img-banners">
+                    </div>
+                    <div class="col-7 nopadding pt-3 pr-2">
+                        <h6>{{ producto.content.title }}</h6>
+                        <p>{{ producto.content.intro }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+    <div class="container col-12 p-1">
+        <a href="#">Ver más productos...</a>
+    </div>
+</section>

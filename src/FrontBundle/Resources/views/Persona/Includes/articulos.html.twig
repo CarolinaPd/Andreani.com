@@ -1,0 +1,18 @@
+<section class="p-lg-5 p-3 seccion-articulos">
+    {% for articulo in articulos %}
+        <div class="container col-12 mb-3 rounded">
+            <a href="{{ path('front_persona_articulo', { "slug": articulo.slug }) }}">
+                <div class="row">
+                    <div class="col-5 nopadding">
+                        {% set image = 'bundles/front/images/warehouse-worker.jpg' %}
+                        <img src="{{ articulo.content.teaser_image }}" alt="{{ articulo.content.title }}" class="img-banners">
+                    </div>
+                    <div class="col-7 nopadding pt-3 pr-2">
+                        <h6>{{ articulo.content.title }}</h6>
+                        <p>{{ articulo.content.intro }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</section>

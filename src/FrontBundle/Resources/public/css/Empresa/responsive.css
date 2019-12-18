@@ -1,0 +1,44 @@
+@media (max-width: 414px) {
+    /* INICIO SECCION ACCESOS RAPIDOS */
+    .seccion-segmentos .col-12 .col-3 p{
+        font-size: 0.8em;
+        line-height: 1.3em;
+        font-weight: 400;
+    }
+    /* FIN SECCION ACCESOS RAPIDOS */
+    
+    /* INICIO FICHA PRODUCTO */
+    .ficha-segmento img{
+        height: 300px;
+        width: 380px;
+    }
+    /* FIN FICHA PRODUCTO */
+
+    /* INICIO SECCION PRODUCTOS */
+    .seccion-productos .col-12 .col-7 p{
+        font-size: 0.7em;
+        line-height: 1em;
+    }
+    /* FIN SECCION PRODUCTOS */
+    
+    /* INICIO FICHA PRODUCTO */
+    .ficha-productos img{
+        height: 300px;
+        width: 380px;
+    }
+    /* FIN FICHA PRODUCTO */
+
+    /* INICIO SECCION SERVICIO */
+    .seccion-servicios .col-12 .col-7 p{
+        font-size: 0.7em;
+        line-height: 1em;
+    }
+    /* FIN SECCION SERVICIO */
+    
+    /* INICIO FICHA SERVICIO */
+    .ficha-servicio img{
+        height: 300px;
+        width: 380px;
+    }
+    /* FIN FICHA SERVICIO */
+}

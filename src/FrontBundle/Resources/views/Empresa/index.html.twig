@@ -1,0 +1,26 @@
+{% extends 'FrontBundle::base.html.twig' %}
+
+{% block header %}
+    {% include "FrontBundle:Empresa/Includes:header.html.twig" %}
+    {% include "FrontBundle:Empresa/Includes:menu.html.twig" %}
+{% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        {% include "FrontBundle:Empresa/Includes:banners.html.twig" %}
+        {% include "FrontBundle:Empresa/Includes:segmentos.html.twig" %}
+        {% include "FrontBundle:Empresa/Includes:productos.html.twig" %}
+        {% include "FrontBundle:Empresa/Includes:servicios.html.twig" %}
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets
+    'bundles/front/css/Empresa/style.css'
+    'bundles/front/css/Empresa/responsive.css'
+    output = 'css/*.css'
+    filter = '?yui_css' %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock %}

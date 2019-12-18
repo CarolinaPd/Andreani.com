@@ -1,0 +1,7 @@
+services:
+    curl:
+        class: AppBundle\Service\Curl
+        arguments: ['@service_container', '@doctrine.orm.entity_manager']
+    cms:
+        class: AppBundle\Service\CMS
+        arguments: ['@service_container', '@doctrine.orm.entity_manager']

@@ -1,0 +1,27 @@
+{% extends 'FrontBundle::base.html.twig' %}
+
+{% block header %}
+    {% include "FrontBundle:Persona/Includes:header.html.twig" %}
+    {% include "FrontBundle:Persona/Includes:menu.html.twig" %}
+{% endblock %}
+
+{% block body %}
+    <div class="wrapper">
+        {% include "FrontBundle:Persona/Includes:banners.html.twig" %}
+        {% include "FrontBundle:Persona/Includes:accesos-rapidos.html.twig" %}
+        {% include "FrontBundle:Persona/Includes:empleo.html.twig" %}
+        {% include "FrontBundle:Persona/Includes:accesos.html.twig" %}
+        {% include "FrontBundle:Persona/Includes:articulos.html.twig" %}
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets
+    'bundles/front/css/Persona/style.css'
+    'bundles/front/css/Persona/responsive.css'
+    output = 'css/*.css'
+    filter = '?yui_css' %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock %}

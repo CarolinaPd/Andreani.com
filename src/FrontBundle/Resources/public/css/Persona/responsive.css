@@ -1,0 +1,23 @@
+@media (max-width: 414px) {
+    /* INICIO SECCION ACCESOS RAPIDOS */
+    .seccion-accesos-rapidos .col-12 .col-3 p{
+        font-size: 0.8em;
+        line-height: 1.3em;
+        font-weight: 400;
+    }
+    /* FIN SECCION ACCESOS RAPIDOS */
+
+    /* INICIO SECCION ARTICULOS */
+    .seccion-articulos .col-12 .col-7 p{
+        font-size: 0.7em;
+        line-height: 1em;
+    }
+    /* FIN SECCION ARTICULOS */
+    
+    /* INICIO FICHA ARTICULO */
+    .ficha-articulo img{
+        height: 300px;
+        width: 380px;
+    }
+    /* FIN FICHA ARTICULO */
+}

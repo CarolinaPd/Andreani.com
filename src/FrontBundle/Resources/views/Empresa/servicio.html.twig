@@ -1,0 +1,29 @@
+{% extends 'FrontBundle::base.html.twig' %}
+
+{% block metaDescription %}{{ servicio.content.SEO.description }}{% endblock %}
+{% block metaKeywords %}{{ servicio.content.SEO.description }}{% endblock %}
+{% block title %}Andreani | {{ servicio.content.SEO.title }}{% endblock %}
+
+{% block header %}
+    {% include "FrontBundle:Empresa/Includes:header.html.twig" %}
+    {% include "FrontBundle:Empresa/Includes:menu.html.twig" %}
+{% endblock %}
+
+{% block body %}
+    <div class="wrapper ficha-servicio p-lg-5 p-3">
+        <img src="{{ servicio.content.banner }}" alt="{{ servicio.content.title }}">
+        <h2 class="pt-4">{{ servicio.content.title }}</h2>
+        {{ markdownToHtml(servicio.content.body) }}
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets
+    'bundles/front/css/Empresa/style.css'
+    'bundles/front/css/Empresa/responsive.css'
+    output = 'css/*.css'
+    filter = '?yui_css' %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+{% endblock %}

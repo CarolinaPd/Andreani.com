@@ -1,0 +1,91 @@
+/* INICIO BANNER */
+.seccion-banner h1{
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    text-shadow: 0 0 0.2em black;
+}
+.seccion-banner p{
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    text-shadow: 0 0 0.2em black;
+}
+/* FIN BANNER */
+
+/* INICIO SECCION ACCESOS RAPIDOS */
+.seccion-accesos-rapidos button {
+    height: 65px;
+    width: 65px;
+    color: #d71d24;
+    background-color: white;
+    font-size: 20px;
+}
+/* FIN SECCION ACCESOS RAPIDOS */
+
+/* INICIO SECCION EMPLEO */
+.seccion-empleo .col-12 {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+}
+/* FIN SECCION EMPLEO */
+
+/* INICIO SECCION ACCESOS */
+.seccion-accesos .col-12 .col-6 {
+    background-color: #d71d24;
+    padding: 0px 8px 0px 0px;
+    background-clip: content-box;
+}
+.seccion-accesos .col-12 .col-6: first-child {
+    padding: 0px 8px 0px 0px;
+}
+.seccion-accesos .col-12 .col-6: last-child {
+    padding: 0px 0px 0px 8px;
+}
+.seccion-accesos p, .seccion-accesos h6 {
+    padding: 5px 20px;
+    color: white;
+}
+.seccion-accesos img {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+}
+/* FIN SECCION ACCESOS */
+
+/* INICIO SECCION ARTICULOS */
+.seccion-articulos .col-12 {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+}
+.seccion-articulos img {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+}
+/* FIN SECCION ARTICULOS */
+
+/* INICIO FICHA ARTICULO */
+.ficha-articulo img{
+    height: auto;
+    width: 1300px;
+    border-radius: 5px;
+}
+.ficha-articulo h2{
+    color: #d7191f;
+    font-size: 30px
+}
+.ficha-articulo h3{
+    font-size: 16px;
+    font-weight: lighter;
+    color: #434343;
+}
+.ficha-articulo p{
+    font-size: 14px;
+}
+.ficha-articulo a {
+    color: #d71a1f;
+}
+/* FIN FICHA ARTICULO */
